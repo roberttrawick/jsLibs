@@ -122,7 +122,7 @@ pathMatrix.prototype.explore = function ( x, y ) {
 		this.activeNodes[ newX.toString() + "," + y.toString() ] = 1;
 	}
 	// have a left neighbor? If so, process it.
-	if (y+1 < this.dimension) {
+	if (parseInt(y)+1 < this.dimension) {
 		var newY = parseInt(y)+1;
 
 		// compute value along this path
