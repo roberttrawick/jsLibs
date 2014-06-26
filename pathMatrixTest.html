@@ -1,0 +1,29 @@
+<html>
+<head>
+
+<!-- test the pathMatrix class -->
+<title>pathMatrix test</title>
+
+<script src="pathMatrix.js"></script>
+
+</head>
+
+<body>
+
+<script>
+	var myPathMatrix = new pathMatrix();
+	myPathMatrix.addRow(131,673,234,103,18);
+	myPathMatrix.addRow(201,96,342,965,150);
+	myPathMatrix.addRow(630,803,746,422,111);
+	myPathMatrix.addRow(537,699,497,121,956);
+	myPathMatrix.addRow(805,732,524,37,331);
+</script>
+
+<form>
+<input type="button" onclick="myPathMatrix.process(); console.log('result is ' + myPathMatrix.nodeSums[4][4] )" value="compute path sum">
+</form>
+
+	
+</body>
+
+</html>
