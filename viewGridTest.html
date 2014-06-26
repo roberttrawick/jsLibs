@@ -1,0 +1,38 @@
+<html>
+
+<head>
+<title>Test View Grid</title>
+<script src="viewGrid.js"></script>
+</head>
+
+<style>
+tClass { border:1px black; }
+td.cellClass { text-align:right; }
+</style>
+<body>
+
+<div id="centralDiv">
+this is where the grid should be displayed
+</div>
+
+<script>
+	var vg = new viewGrid();
+
+	vg.addRow( "131","673","234","103","18" );
+	vg.addRow( "201", "96","342","965","150" );
+	vg.addRow( "630","803","746","422","111" );
+	vg.addRow( "537","699","497","121","956" );
+	vg.addRow( "805","732","524", "37","331" );
+	vg.display( "centralDiv", "tClass", "", "cellClass" );
+	
+	function changeContent() {
+		vg.updateCell( 3, 3, "0" );
+	}
+</script>
+
+<form>
+<input type="button" onclick="changeContent()" value="Change content">
+</form>
+
+</body>
+</html>
