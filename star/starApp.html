@@ -23,7 +23,7 @@
 	</p>
 	<p>number of points: <input type="number" min="4" max="500" ng-model="numPoints"></p>
 	
-	<div id="drawingArea"">
+	<div id="drawingArea">
 		<svg id="star" xmlns="http://www.w3.org/2000/svg" version="1.1" height='500' width='500'>
 			<polygon points="{{star.reconfigure(ratioVal/20,numPoints).svgPolygonPoints(100)}}"/>
 		</svg>
