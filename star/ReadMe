@@ -1,0 +1,7 @@
+The vertices of stars may be described using equally spaced points on two concentric circles.
+
+Star.js is JavaScript for creating an array of points of form
+  [ {x: x0, y: y0}, ..., {x: x2N-1, y: y2N-1} ]
+by specifying the number of points N and the ratio of inner circle radius to outer circle radius.
+The set of points represent a polygon centered about (0,0).
+A routine is available for translating this object into a string suitable for HTML SVG polygon.
